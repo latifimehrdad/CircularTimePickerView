@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">CircularTimePickerView</string>
+    <string name="timeString">%1$s:%2$s</string>
 </resources>
