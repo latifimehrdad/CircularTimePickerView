@@ -20,6 +20,13 @@ A custom circular time picker for Android, allowing users to select hours and mi
 
 ---
 
+## Requirements
+- Add it in your root settings.gradle at the end of repositories:
+```gradle
+maven { url 'https://jitpack.io' }
+```
+---
+
 ## Installation
 ```gradle
 implementation 'androidx.appcompat:appcompat:1.3.0'
