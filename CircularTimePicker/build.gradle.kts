@@ -12,7 +12,6 @@ android {
         minSdk = 26
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
-        consumerProguardFiles("consumer-rules.pro")
     }
 
     buildTypes {
@@ -30,6 +29,26 @@ android {
     }
     kotlinOptions {
         jvmTarget = "17"
+    }
+
+    publishing {
+        singleVariant("release") {
+            withSourcesJar()
+        }
+    }
+}
+
+afterEvaluate {
+    publishing {
+        publications {
+            create<MavenPublication>("release") {
+                from(components["release"])
+                // JitPack به این‌ها از طریق -Pgroup و -Pversion مقدار می‌دهد.
+                groupId = (project.findProperty("group") ?: "com.github.latifimehrdad").toString()
+                artifactId = "CircularTimePicker"
+                version = (project.findProperty("version") ?: "1.0").toString()
+            }
+        }
     }
 }
 
