@@ -29,8 +29,7 @@ maven { url 'https://jitpack.io' }
 
 ## Installation
 ```gradle
-implementation 'androidx.appcompat:appcompat:1.3.0'
-implementation 'androidx.constraintlayout:constraintlayout:2.0.4'
+implementation 'com.github.latifimehrdad:CircularTimePickerView:1.6'
 ```
 ---
 
