@@ -27,7 +27,11 @@ maven { url 'https://jitpack.io' }
 ```
 ---
 
-## Installation
+## Installation 
+
+- Last Version
+[![](https://jitpack.io/v/latifimehrdad/CircularTimePickerView.svg)](https://jitpack.io/#latifimehrdad/CircularTimePickerView)
+
 ```gradle
 implementation 'com.github.latifimehrdad:CircularTimePickerView:1.6'
 ```
